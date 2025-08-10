@@ -1,11 +1,6 @@
 # Air Filter Classifier
 
 Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 & EfficientNetB0). This repo highlights the approach, results, and key insights, with clear visuals and a concise code entrypoint.
-
-> Image placeholder  
-> Project banner / collage (1 sample per class)  
-> Path: images/banner_classes_grid.png
-
 ---
 
 ## Highlights
@@ -26,21 +21,13 @@ Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 &
 
 │ └── main_training.py # training & evaluation script
 
-├── models/ # saved .keras models (created when you run)
-
-├── images/ # visuals for the README (placeholders below)
-
 │ ├── banner_classes_grid.png
 
 │ ├── confusion_matrices_example.png
 
-│ ├── pipeline_diagram.png
-
 │ ├── class9_vs_class10_glue.png
 
 │ └── results_barchart.png
-
-├── reports/ # optional docs (if you want to include)
 
 │ ├── Project_report_Hruska.pdf
 
@@ -51,20 +38,9 @@ Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 &
 └── README.md
 
 
-
-If you’d like to run the code, create your own data folders under data/... following a standard Keras directory layout. For this “showcase” repo, we only include code and visuals.
-
----
-
 ## Approach
 
 We use ImageNet-pretrained CNNs (MobileNetV2, EfficientNetB0) and a lightweight classification head. Grayscale images are replicated across RGB channels for compatibility. A small configuration grid explores fine-tuning depth, learning rate, and regularization.
-
-> Image placeholder  
-> Pipeline diagram: Data → Preprocess → Train → Evaluate  
-> Path: images/pipeline_diagram.png
-
----
 
 ## Results (example)
 
@@ -77,8 +53,8 @@ We use ImageNet-pretrained CNNs (MobileNetV2, EfficientNetB0) and a lightweight 
 > Path: images/results_barchart.png
 
 > Image placeholder  
-> Class 9 vs Class 10 (glue stripe highlight)  
-> Path: images/class9_vs_class10_glue.png
+> Classes  
+> Path: images/classes.png
 
 ---
 
@@ -236,7 +212,6 @@ for name, backbone in backbones.items():
         )
         model.save(out_path)
         print(f"Saved: {out_path}")
-      
         for ds, tag in [(test_ds_orig, "Original"), (test_ds_med, "Medium"), (test_ds_hard, "Hard")]:
             loss, acc = model.evaluate(ds, verbose=0)
             print(f"{tag:8s} | loss={loss:.4f}  acc={acc:.4f}")
