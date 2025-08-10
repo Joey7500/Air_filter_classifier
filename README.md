@@ -55,8 +55,3 @@ Classes
 - Robustness requires mindful augmentation; extreme brightness/contrast harms fine details.
 - Moderate fine-tuning and mild regularization often suffice for this dataset.
 
-        print(f"Saved: {out_path}")
-        for ds, tag in [(test_ds_orig, "Original"), (test_ds_med, "Medium"), (test_ds_hard, "Hard")]:
-            loss, acc = model.evaluate(ds, verbose=0)
-            print(f"{tag:8s} | loss={loss:.4f}  acc={acc:.4f}")
-            plot_cm(model, ds, tag, class_names)
