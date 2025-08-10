@@ -20,14 +20,6 @@ Confusion matrix hard dataset
 
 │ └── main_training.py # training & evaluation script
 
-│ ├── banner_classes_grid.png
-
-│ ├── confusion_matrices_example.png
-
-│ ├── class9_vs_class10_glue.png
-
-│ └── results_barchart.png
-
 │ ├── Project_report_Hruska.pdf
 
 │ ├── Slides_air_filter_classifier.pptx
