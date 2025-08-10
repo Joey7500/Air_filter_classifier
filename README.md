@@ -10,9 +10,8 @@ Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 &
 - Confusion matrices on three test sets (original, medium, hard)
 - EarlyStopping and saved models per configuration
 
-> Image placeholder  
-> Three confusion matrices (original / medium / hard)  
-> Path: images/confusion_matrices_example.png
+> <img width="582" height="523" alt="confusion_matrices_example" src="https://github.com/user-attachments/assets/e451ea8a-256e-4774-829d-d5a0d5395c85" />
+Confusion matrix hard dataset
 
 ---
 
@@ -48,13 +47,11 @@ We use ImageNet-pretrained CNNs (MobileNetV2, EfficientNetB0) and a lightweight 
 - Medium and hard test sets expose robustness differences; EfficientNetB0 generally outperforms MobileNetV2.
 - Over/under-exposure reduces discriminability between visually similar classes (notably 9 vs 10).
 
-> Image placeholder  
-> Bar chart: accuracy per model across test sets  
-> Path: images/results_barchart.png
+<img width="702" height="448" alt="results_barchart" src="https://github.com/user-attachments/assets/ce6affaf-aebb-45ff-8a04-907b7a4e51cc" />
+Chart: accuracy per model across test sets  
 
-> Image placeholder  
-> Classes  
-> Path: images/classes.png
+<img width="648" height="669" alt="classes" src="https://github.com/user-attachments/assets/695114b7-97e3-4310-a508-07b0623c7c3f" />
+Classes
 
 ---
 
