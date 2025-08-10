@@ -1,6 +1,6 @@
 # Air Filter Classifier
 
-Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 & EfficientNetB0). This repo highlights the approach, results, and key insights, with clear visuals and a concise code entrypoint.
+Classifying 11 industrial air-filter types with transfer learning (MobileNetV2 & EfficientNetB0). This repo highlights the approach, results, and key insights.
 ---
 
 ## Highlights
